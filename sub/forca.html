@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORCA DOS DEXTERS</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <h1 id="letras"></h1>
+</body>
+</html>
+<script>
+
+    transforma()
+    function transforma(palavra){
+        var palavra = "polcarpo"
+        var array = palavra.split('')
+        var resposta = ""
+        for(var pos = 0; pos < array.length; pos++){
+            resposta += "  _  "
+        }
+        document.getElementById("letras").innerHTML = resposta
+    }
+</script>
